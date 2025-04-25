@@ -1,6 +1,5 @@
 import time
 import mediapipe as mp
-import tkinter
 import cv2
 
 BaseOptions = mp.tasks.BaseOptions
