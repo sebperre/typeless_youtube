@@ -1,5 +1,6 @@
 import time
 import mediapipe as mp
+import tkinter
 import cv2
 
 BaseOptions = mp.tasks.BaseOptions
@@ -46,7 +47,6 @@ def detect_gesture():
         if not ret:
             print("Failed to capture a frame")
             break
-
 
         current_timestamp_ms = int(time.time() * 1000)
         if current_timestamp_ms > prev_timestamp_ms+2000:
